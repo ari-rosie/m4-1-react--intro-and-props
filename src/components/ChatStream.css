@@ -8,5 +8,49 @@
   - a background color of #e9e9eb
 */
 .chat-stream {
+  display: flex;
+  flex-direction: column;
   flex: 1;
+  width: 100%;
+}
+
+.chat-stream img {
+  border-radius: 50%;
+  width: 50px;
+  align-self: center;
+}
+
+.user, .not_user {
+  display: flex;
+  margin: 20px 10px;
+  min-height: 80px;
+}
+
+.user {
+  margin-left: auto;
+}
+
+.user .message {
+  background-color: #1185f7;
+  color: #FFF;
+  border-radius: 5px;
+
+}
+
+.user span, .user img {
+  display: none;
+}
+
+.not_user .message {
+  background-color: #e9e9eb;
+  color: #000;
+  border-radius: 5px;
+
+}
+
+.mess_wrapper span{
+  padding-left: 10px;
+}
+.message {
+  padding: 10px;
 }
